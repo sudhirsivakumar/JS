@@ -1,12 +1,11 @@
-console.log("---------------EVEN OR ODD DAY MESSSAGE------------");
-
 //STRING INPUT  
-let StringNumber="12";
+let StringNumber="11";
 
 //CONVERSION TO NUMBER
 let num=Number(StringNumber);
 
-switch(num%2){
+switch(num%2)
+{
     case 0:
         console.log("Even Day");
         break;

@@ -1,9 +1,9 @@
-console.log("-----------WELCOME TO GRADE CALCULATOR----------");
+
 //Student mark input as string
-let StudentMark="85";
+let SM="85";
 
 //Conversion to number
-let mark=Number(StudentMark);
+let mark=Number(SM);
 
 //Switch statement 
 

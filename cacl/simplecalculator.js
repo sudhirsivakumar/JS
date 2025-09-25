@@ -1,11 +1,10 @@
-console.log("----------------SIMPLE CALCULATOR------------");
-console.log("Enter Your Input:");
-let string1="3";
-let string2="4";
+
+let str1="3";
+let str2="4";
 
 
-num1=Number(string1);
-num2=Number(string2);
+num1=Number(str1);
+num2=Number(str2);
 
 let op="*";
 
