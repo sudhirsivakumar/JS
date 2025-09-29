@@ -1,36 +1,33 @@
 let score = 0;
 
-let q1 = prompt("Q1: What is 2 + 2?\n1) 3\n2) 4\n3) 5");
+let q1 = prompt("Q1: What is 2 + 2?\n1) 2\n2) 4\n3) 6");
 switch (q1) {
-    case "2":
+    case "4":
         score++;
         break;
 }
-
-let q2 = prompt("Q2: Which is the capital of France?\n1) Paris\n2) Rome\n3) Berlin");
-switch (q2) {
-    case "1":
-        score++;
-        break;
-}
-
-let q3 = prompt("Q3: Which is the largest planet?\n1) Earth\n2) Jupiter\n3) Mars");
+let q3 = prompt("Q3:  What is 3 + 3?\n1) 3\n2) 6\n3) 9");
 switch (q3) {
-    case "2":
+    case "6":
         score++;
         break;
 }
-
-let q4 = prompt("Q4: Which language is used for web styling?\n1) HTML\n2) CSS\n3) Python");
+let q2 = prompt("Q2:  What is 4 + 4?\n1) 4\n2) 8\n3) 12");
+switch (q2) {
+    case "8":
+        score++;
+        break;
+}
+let q4 = prompt("Q4:  What is 5 + 5?\n1) 5\n2) 10\n3) 15");
 switch (q4) {
-    case "2":
+    case "10":
         score++;
         break;
 }
 
-let q5 = prompt("Q5: Who developed JavaScript?\n1) Brendan Eich\n2) Elon Musk\n3) Bill Gates");
+let q5 = prompt("Q5:  What is 6 + 6?\n1) 6\n2) 12\n3) 18");
 switch (q5) {
-    case "1":
+    case "12":
         score++;
         break;
 }
