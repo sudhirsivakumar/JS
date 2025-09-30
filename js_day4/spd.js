@@ -17,9 +17,10 @@ if (stdcheck==std)
             alert("you are eligible from this year");
         }
         let time=date.getHours();
+        console.log(time);
         if (time<12){
             alert("good morning!");
-        }else if(time>12&&time<4){
+        }else if(time=>12&&time<=16){
             alert("Good afternoon!");
         }else{
             alert("Good evening!");
