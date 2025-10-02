@@ -29,7 +29,14 @@ if (stdcheck==std)
         let num2 = parseInt(prompt("inoru number soldraa!"));
         alert ("ithan answer uhh: "+(num1+num2));
         alert ("Dont keep watching the clock, do what it does\n\t\t\t\t\t\t\t\t\t\t-SDR");
-
+        let student_json = {
+            name: std,
+            password: pass,
+            birthyear: age,
+            age: age1,
+            eligibility: age >= 18 ? "Eligible" : "Not Eligible"
+        };
+        alert("Student Info in JSON format:\n" + JSON.stringify(student_json, null, 2));
     }
 }
 else
