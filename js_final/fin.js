@@ -10,7 +10,7 @@ if (email.trim() === "") {
 
 let ageStr = prompt("Enter your age:");
 let age = parseInt(ageStr);
-if (isNaN(age)) {
+if (isNaN(age) || ageStr!=age) {
     throw new Error("Age must be a number!");
 }
 if (age < 12) {
