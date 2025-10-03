@@ -23,35 +23,85 @@ alert("Registration successful! Starting quiz...");
 
 
 let score = 0;
-
-
-let q1 = prompt("Q1: What is 2 + 2?\n1) 2\n2) 4\n3) 6");
-switch (q1) {
-    case "4":
-        score++;
-        break;
+for (let q = 1; q<=3; q++)
+{
+    let w=Math.floor(Math.random()*10);
+    switch(w)
+    {
+        case 1:
+            let q1 = prompt("Q1: What is 2 + 2?\n1) 2\n2) 4\n3) 6");
+            switch (q1) {
+                case "4":
+                    score++;
+                    break;
+            }break;
+        case 2:
+            let q2 = prompt("Q2: What is 3 + 3?\n1) 3\n2) 6\n3) 9");
+            switch (q2) {
+                case "6":
+                    score++;
+                    break;
+            }break;
+        case 3:
+            let q3 = prompt("Q3: What is 4 + 4?\n1) 4\n2) 8\n3) 12");
+            switch (q3) {
+                case "8":
+                    score++;
+                    break;
+            }break;
+        case 4:
+            let q4 = prompt("Q4: What is 5 + 5?\n1) 5\n2) 10\n3) 15");
+            switch (q4) {
+                case "10":
+                    score++;
+                    break;
+            }break;
+        case 5:
+            let q5 = prompt("Q5: What is 6 + 6?\n1) 6\n2) 12\n3) 18");
+            switch (q5) {
+                case "12":
+                    score++;
+                    break;
+            }break;
+        case 6:
+            let q6 = prompt("Q6: What is 7 + 7?\n1) 7\n2) 14\n3) 21");
+            switch (q6) {
+                case "14":
+                    score++;
+                    break;
+            }break;
+        case 7:
+            let q7 = prompt("Q7: What is 8 + 8?\n1) 8\n2) 16\n3) 24");
+            switch (q7) {
+                case "16":
+                    score++;
+                    break;
+            }break;
+        case 8:
+            let q8 = prompt("Q8: What is 9 + 9?\n1) 9\n2) 18\n3) 27");
+            switch (q8) {
+                case "18":
+                    score++;
+                    break;
+            }break;
+        case 9:
+            let q9 = prompt("Q9: What is 10 + 10?\n1) 10\n2) 20\n3) 30");
+            switch (q9) {
+                case "20":
+                    score++;
+                    break;
+            }break;
+        case 10:
+            let q10 = prompt("Q10: What is 11 + 11?\n1) 11\n2) 22\n3) 33");
+            switch (q10) {
+                case "22":
+                    score++;
+                    break;
+            }break;
+    }
 }
-let q3 = prompt("Q3:  What is 3 + 3?\n1) 3\n2) 6\n3) 9");
-switch (q3) {
-    case "6":
-        score++;
-        break;
-}
-let q2 = prompt("Q2:  What is 4 + 4?\n1) 4\n2) 8\n3) 12");
-switch (q2) {
-    case "8":
-        score++;
-        break;
-}
-let q4 = prompt("Q4:  What is 5 + 5?\n1) 5\n2) 10\n3) 15");
-switch (q4) {
-    case "10":
-        score++;
-        break;
-}
-    alert("Quiz complete! Calculating results...");
-
-let percentage=(score/4)*100;
+alert("Quiz complete! Calculating results...");
+let percentage=(score/3)*100;
 let results = {
     name: name,
     email: email,
@@ -62,8 +112,8 @@ let resultMsg = "Results:\n" +
     "Name: " + name + "\n" +
     "Email: " + email + "\n" +
     "Age: " + age + "\n" +
-    "Total Marks: " + score + "/4\n" +
+    "Total Marks: " + score + "/3\n" +
     "Percentage: " + percentage + "%\n\n" +
     "Full Data in JSON:\n" + JSON.stringify(results,null,2);
     
-    setTimeout(() => {alert(resultMsg)},2000);
+    setTimeout(() => {alert(resultMsg)},1000);
